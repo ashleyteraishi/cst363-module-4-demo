@@ -1,0 +1,15 @@
+<!doctype html>
+<html xmlns:th="www.thymeleaf.org">
+<head>
+  <title> Search reviews </title>
+</head>
+<body>
+  <h1> Search for reviews by userid or item name </h1>
+  <form action="#" th:action="@{/reviewform}"
+      th:object="${rating}" method="post">
+  User id: <input type="text" th:field="*{name}" />
+  Item name: <input type="text" th:field="*{item}" />
+  <br/>
+  <input type="submit" value="Search" />
+  </form>
+</body></html>

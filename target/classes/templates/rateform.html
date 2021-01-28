@@ -1,0 +1,16 @@
+<!doctype html>
+<html xmlns:th="www.thymeleaf.org">
+<head>
+  <title>New Review</title>
+</head>
+<body>
+  <h1> Create a review </h1>
+  <form action="#" th:action="@{/rateform}"
+      th:object="${rating}" method="post">
+  Your name: <input type="text" th:field="*{name}" />
+  Item: <input type="text" th:field="*{item}" />
+  Rating 0-5: <input type="number" th:field="*{stars}" />
+  <br/>
+  <input type="submit" value="Submit" />
+  </form>
+</body></html>

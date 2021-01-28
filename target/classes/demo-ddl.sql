@@ -1,0 +1,9 @@
+CREATE SCHEMA IF NOT EXISTS demo;
+USE demo;
+
+CREATE TABLE IF NOT EXISTS reviews (
+  name VARCHAR(50) NOT NULL,
+  item VARCHAR(50) NOT NULL,
+  rating INT NOT NULL,
+  PRIMARY KEY (name, item));
+  

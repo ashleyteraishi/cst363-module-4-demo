@@ -1,0 +1,22 @@
+<!doctype html>
+<html xmlns:th="www.thymeleaf.org">
+<head>
+  <title>Ratings</title>
+</head>
+<body>
+  <p>Ratings</p>
+<table >
+	<tr>
+		<th>User</th>
+		<th>Item</th>
+		<th>Rating</th>
+	</tr>
+	<div th:each="rating : ${ratings}">
+		<tr>
+			<td th:inline="text">[[${rating.name}]]</td>
+			<td th:inline="text">[[${rating.item}]]</td>
+			<td th:inline="text">[[${rating.starsString}]]</td>
+		</tr>
+   </div>
+</table>
+</body></html>
